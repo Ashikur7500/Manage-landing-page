@@ -15,13 +15,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html,body{
+    overflow-x: hidden;
+}
 body {
     font-size: 16px;
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: #fff;
     color: var(--dark-grayish-blue);
-    overflow-x: hidden;
+    position: relative;
+    
 }
 ul, ol {
     list-style: none;
@@ -129,6 +132,7 @@ header {
     top: -120px;
     right: -30px;
     z-index: 0;
+  
 }
 .hero-heading {
     font-size: 52px;
@@ -254,4 +258,35 @@ header {
 }
 .subscription:focus {
     outline: none;
+}
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+ /* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    .container{
+        width: 990px;
+    }
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+    .container{
+        width: 1000px;
+    }
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) {}  */
+@media (max-width:992px){
+    .bg-pattern{
+        width: 100px;
+    }
 }
